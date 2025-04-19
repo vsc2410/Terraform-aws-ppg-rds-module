@@ -1,0 +1,27 @@
+# terraform.tfvars
+region               = "eu-west-1"
+environment          = "dev"
+db_name              = "TrackingApp"
+db_username          = "ppgadmin"
+instance_class       = "db.t3.small"
+allocated_storage    = 20
+engine               = "postgres"
+engine_version       = "15.7"
+db_subnet_group_name = "ppg-db-subnet-group"
+vpc_id               = "vpc-05d920b00d3f6e0a0" #  Replace with your actual VPC ID
+password_length      = 18
+multi_az             = false
+availability_zones   = ["eu-west-1a", "eu-west-1b", "eu-west-1c"]
+enable_rds_proxy     = false # Set this to true to enable RDS Proxy
+proxy_name           = "ppg-postgres-proxy"
+db_subnet_ids        = ["subnet-12345", "subnet-67890", "subnet-24680"]
+postgres_port        = 5432
+profile              = "default" # Add the profile here
+storage_type         = "gp2"
+storage_throughput   = null
+storage_encrypted    = false
+kms_key_id           = null
+replicate_source_db  = null
+replica_mode         = null
+publicly_accessible  = false
+skip_final_snapshot  = true
