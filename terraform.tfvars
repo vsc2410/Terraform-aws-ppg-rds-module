@@ -1,7 +1,7 @@
 # terraform.tfvars
 region               = "eu-west-1"
 environment          = "dev"
-db_name              = "TrackingApp"
+db_name              = "MyAppDB"
 db_username          = "ppgadmin"
 instance_class       = "db.t3.small"
 allocated_storage    = 20
